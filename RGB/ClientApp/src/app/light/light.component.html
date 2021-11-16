@@ -1,0 +1,37 @@
+<div class="bgimage">
+  <h1 id="tableLabel">RX-78-2 Color Picker</h1>
+
+  <p *ngIf="!lights"><em>Loading...</em></p>
+
+  <p>New Color: </p>
+
+  <div>
+    <label for="red">R: </label>
+    <input id="red" [(ngModel)]="newLight.red" placeholder="0" />
+    <label for="green">G: </label>
+    <input id="green" [(ngModel)]="newLight.green" placeholder="0" />
+    <label for="blue">B: </label>
+    <input id="blue" [(ngModel)]="newLight.blue" placeholder="0" />
+    <button class="btn btn-primary" (click)="onButtonConfirm()">Save</button>
+  </div>
+
+  <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="lights">
+    <thead>
+      <tr>
+        <th>Red</th>
+        <th>Green</th>
+        <th>Blue</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let light of lights">
+        <td>{{ light.red }}</td>
+        <td>{{ light.green }}</td>
+        <td>{{ light.blue }}</td>
+
+      </tr>
+    </tbody>
+  </table>
+
+</div>
