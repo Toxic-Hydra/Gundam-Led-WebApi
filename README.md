@@ -10,7 +10,7 @@ Heres what the LED looks like in Gundam:
 
 ![white](/images/white.png)
 
-![red](/images/red.png)
+![green](/images/green.png)
 
 ## Hardware
 This project runs entirely on a [Raspberry Pi](https://www.raspberrypi.org/) in order to make use of its GPIO pins.
