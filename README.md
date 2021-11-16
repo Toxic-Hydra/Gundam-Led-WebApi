@@ -35,11 +35,11 @@ and then used scp to push the app onto the pi:
 ``` scp -r /publish-location/* pi@raspberrypi:/home/pi/deployment-location/```
 
 These are steps outlined in [Microsofts official IOT documentation](https://docs.microsoft.com/en-us/dotnet/iot/deployment)
-I then ssh into the pi and run ```chmod +x ./RGB`` withing the deployment folder.
+I then ssh into the pi and run ```chmod +x ./RGB``` within the deployment folder.
 
 I also make sure to tell the program to run it on all url's so I can connect to the site on my desktop, far away from the pi.
 
-```./RGB --urls https://*:<PORT>```
+```./RGB --urls https://*:<PORT> ```
 
 ## Future work
 I think this program is pretty much finished for my personal Gundam build but I would like to add a Feature that allows me to modify the brightness of the led by pushing a string to the api. Something similar to [Quake's light animation](https://github.com/id-Software/Quake/blob/bf4ac424ce754894ac8f1dae6a3981954bc9852d/qw-qc/world.qc#L328-L372)
